@@ -12,7 +12,7 @@ export default createGlobalStyle`
     height: 100%
   }
   body {
-    background: url(${BackgroundImage}) no-repeat center;
+    background: url(${BackgroundImage}) center;
     -webkit-font-smoothing: antialiased !important;
   }
   a {

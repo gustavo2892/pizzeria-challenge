@@ -37,6 +37,8 @@ module.exports = {
     'no-console': ["error", { allow: ["tron"] }],
     'jsx-a11y/control-has-associated-label': 'off',
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn'
+    'react-hooks/exhaustive-deps': 'warn',
+    'global-require': 'off',
+    'import/no-dynamic-require': 'off'
   },
 };

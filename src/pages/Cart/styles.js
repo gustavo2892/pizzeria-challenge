@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { darken } from 'polished';
 
 export const Container = styled.div`
+  border: solid 2px;
+  border-color: #228b22 transparent #e61919 transparent;
   padding: 30px;
   background: #fff;
   border-radius: 4px;

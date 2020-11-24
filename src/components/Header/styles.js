@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Container = styled.header`
+  border: solid 2px;
+  border-color: #228b22 transparent #e61919 transparent;
   display: flex;
   background-color: #fff;
   justify-content: space-between;
@@ -9,6 +11,7 @@ export const Container = styled.header`
   margin: 0;
   width: 100%;
   position: fixed;
+  top: 0;
   z-index: 10;
   img {
     width: 50px;

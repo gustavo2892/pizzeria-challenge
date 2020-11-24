@@ -43,13 +43,13 @@
     {
       "id": 1,
       "type": "A Moda da Casa",
-      "description": "Mussarela, lombo, champignon, catupiry, bacon e azeitonas",
+      "description": "Mussarela, lombo, champignon, catupiry, e bacon",
       "price": 32
     },
     {
       "id": 2,
       "type": "A Moda da Geca",
-      "description": "Mussarela, frango, presunto, lombo, cebola, catupiry e azeitonas",
+      "description": "Mussarela, frango, presunto, lombo, cebola e catupiry",
       "price": 31.5
     },
     {
@@ -73,7 +73,7 @@
     {
       "id": 6,
       "type": "Americana",
-      "description": "Mussarela, frango, champignon, bacon, cheddar e azeitonas",
+      "description": "Mussarela, frango, champignon, bacon e cheddar",
       "price": 29.5
     },
     {
@@ -139,7 +139,7 @@
     {
       "id": 17,
       "type": "Frango Caipira",
-      "description": "Mussarela, frango, ervilhas, palmito, bacon, cebolas e azeitonas",
+      "description": "Mussarela, frango, ervilhas, palmito, bacon e cebolas",
       "price": 28.6
     },
     {
@@ -157,7 +157,7 @@
     {
       "id": 20,
       "type": "Italiana",
-      "description": "Mussarela, calabresa, palmito, catupiry, cebolas e azeitonas",
+      "description": "Mussarela, calabresa, palmito, catupiry e cebolas",
       "price": 30
     },
     {
@@ -193,7 +193,7 @@
     {
       "id": 26,
       "type": "Napolitana",
-      "description": "Mussarela, manjericão, tomate, alho frito, parmesão e azeitonas",
+      "description": "Mussarela, manjericão, tomate, alho frito e parmesão",
       "price": 27.1
     },
     {
@@ -211,13 +211,13 @@
     {
       "id": 29,
       "type": "Portuguesa",
-      "description": "Mussarela, presunto, ervilhas, ovo, palmito, cebolas e azeitonas",
+      "description": "Mussarela, presunto, ervilhas, ovo, palmito e cebolas",
       "price": 29.5
     },
     {
       "id": 30,
       "type": "Princesinha",
-      "description": "Mussarela, lombo, palmito, milho, tomate, catupiry e azeitonas",
+      "description": "Mussarela, lombo, palmito, milho, tomate e catupiry",
       "price": 31.2
     },
     {
@@ -235,7 +235,7 @@
     {
       "id": 33,
       "type": "Siciliana",
-      "description": "Mussarela, presunto, bacon, champignon, tomate e azeitonas",
+      "description": "Mussarela, presunto, bacon, champignon e tomate ",
       "price": 29.9
     },
     {
@@ -247,7 +247,7 @@
     {
       "id": 35,
       "type": "Tonelada",
-      "description": "Mussarela, presunto, frango, calabresa, ovos, bacon, catupiry e azeitonas",
+      "description": "Mussarela, presunto, frango, calabresa, ovos e bacon",
       "price": 31.7
     },
     {
@@ -259,7 +259,7 @@
     {
       "id": 37,
       "type": "Vegetariana",
-      "description": "Mussarela, brócolis, escarola, champignon, tomate, palmito, parmesão e azeitonas",
+      "description": "Mussarela, brócolis, champignon, tomate e palmito",
       "price": 30
     }
   ]
