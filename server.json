@@ -1,0 +1,225 @@
+{
+  "dough": [
+    {
+      "id": 1,
+      "type": "Tradicional"
+    },
+    {
+      "id": 2,
+      "type": "Integral"
+    },
+    {
+      "id": 3,
+      "type": "Tapioca"
+    }
+  ],
+  "size": [
+    {
+      "id": 1,
+      "type": "Broto",
+      "description": "Pizza com 4 pedaços"
+    },
+    {
+      "id": 2,
+      "type": "Média",
+      "description": "Pizza com 6 pedaços"
+    },
+    {
+      "id": 3,
+      "type": "Grande",
+      "description": "Pizza com 8 pedaços"
+    },
+    {
+      "id": 4,
+      "type": "Família",
+      "description": "Pizza com 12 pedaços"
+    }
+  ],
+  "flavor": [
+    {
+      "id": 9,
+      "type": "A Moda da Casa",
+      "description": "Mussarela, lombo, champignon, catupiry, bacon e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "A Moda da Geca",
+      "description": "Mussarela, frango, presunto, lombo, cebola, catupiry e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Abobrinha",
+      "description": "Mussarela, abobrinha em rodelas, alho frito e azeitonas"
+    },
+    {
+      "id": 4,
+      "type": "Alho e Óleo",
+      "description": "Mussarela, alho, parmesão e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Aliche",
+      "description": "Mussarela, filé de aliche, parmesão, tomate e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Americana",
+      "description": "Mussarela, frango, champignon, bacon, cheddar e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Atum",
+      "description": "Mussarela, atum, cebolas e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Baiana",
+      "description": "Mussarela, calabresa, pimenta, cebolas e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Brócolis",
+      "description": "Mussarela, brócolis, bacon, alho frito, cebolas e azeitonas"
+    },
+    {
+      "id": 5,
+      "type": "Calabresa",
+      "description": "Mussarela, calabresa, cebolas e azeitonas"
+    },
+    {
+      "id": 3,
+      "type": "Camarão",
+      "description": "Mussarela, camarão, catupiry e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Carioca",
+      "description": "Mussarela, presunto, rodelas de tomate e azeitonas"
+    },
+    {
+      "id": 7,
+      "type": "Catuperu",
+      "description": "Mussarela, peito de peru, milho, catupiry e azeitonas"
+    },
+    {
+      "id": 8,
+      "type": "Catupiry",
+      "description": "Mussarela, catupiry e azeitonas"
+    },
+    {
+      "id": 6,
+      "type": "Champignon",
+      "description": "Mussarela, champignon, bacon e azeitonas"
+    },
+    {
+      "id": 2,
+      "type": "Creme de Milho",
+      "description": "Mussarela, creme de milho, batata palha e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Frango Caipira",
+      "description": "Mussarela, frango, ervilhas, palmito, bacon, cebolas e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Frango Catupiry",
+      "description": "Mussarela, frango, catupiry e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Frango da Casa",
+      "description": "Mussarela, frango, bacon, catupiry, milho e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Italiana",
+      "description": "Mussarela, calabresa, palmito, catupiry, cebolas e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Lombinho",
+      "description": "Mussarela, lombo, cebolas e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Lombo com Catupiry",
+      "description": "Mussarela, lombo, catupiry e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Marguerita",
+      "description": "Mussarela, tomate, manjericão, parmesão e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Milho Verde",
+      "description": "Mussarela, milho, catupiry e azeitonas"
+    },
+    {
+      "id": 1,
+      "type": "Mussarela",
+      "description": "Mussarela, rodelas de tomate e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Napolitana",
+      "description": "Mussarela, manjericão, tomate, alho frito, parmesão e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Paulista",
+      "description": "Mussarela, presunto, provolone, catupiry e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Pepperoni",
+      "description": "Mussarela, pepperoni fatiado, cebolas e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Portuguesa",
+      "description": "Mussarela, presunto, ervilhas, ovo, palmito, cebolas e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Princesinha",
+      "description": "Mussarela, lombo, palmito, milho, tomate, catupiry e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Quatro Queijos",
+      "description": "Mussarela, provolone, catupiry, gorgonzola e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Rúcula",
+      "description": "Mussarela, tomate seco, rúculas e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Siciliana",
+      "description": "Mussarela, presunto, bacon, champignon, tomate e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Strogonoff de Frango",
+      "description": "Mussarela, frango ao molho rose, champignon e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Tonelada",
+      "description": "Mussarela, presunto, frango, calabresa, ovos, bacon, catupiry e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Três Queijos",
+      "description": "Mussarela, provolone, catupiry e azeitonas"
+    },
+    {
+      "id": 9,
+      "type": "Vegetariana",
+      "description": "Mussarela, brócolis, escarola, champignon, tomate, palmito, parmesão e azeitonas"
+    }
+  ]
+}
