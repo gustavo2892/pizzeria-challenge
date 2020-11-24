@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import BackgroundImage from '../assets/images/background.png';
 
 export default createGlobalStyle`
   * {
@@ -8,10 +9,13 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
   html, body, #root {
-    min-height: 100%
+    height: 100%
   }
   body {
-    background: #7159c1;
+    background: url(${BackgroundImage}) no-repeat center;
     -webkit-font-smoothing: antialiased !important;
+  }
+  a {
+    text-decoration: none;;
   }
 `;

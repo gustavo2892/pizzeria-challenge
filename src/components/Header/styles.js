@@ -7,18 +7,26 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
   img {
     width: 50px;
     margin: 15px 0px 15px 50px;
   }
 `;
 
-export const Cart = styled(Link)`
+export const OptionsContainer = styled.div`
+  display: flex;
+  margin-right: 50px;
+`;
+
+export const Option = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
   transition: opacity 0.2s;
-  margin-right: 50px;
+  margin-left: 40px;
   &:hover {
     opacity: 0.7;
   }
@@ -27,12 +35,12 @@ export const Cart = styled(Link)`
     margin-right: 10px;
     strong {
       display: block;
-      color: #cc0000;
+      color: #000;
     }
     span {
       padding: 5px;
       font-size: 12px;
-      color: #cc0000;
+      color: #000;
     }
   }
 `;

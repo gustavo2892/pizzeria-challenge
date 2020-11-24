@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MdShoppingCart } from 'react-icons/md';
+import { MdShoppingCart, MdLocalPizza } from 'react-icons/md';
 
-import { Container, Cart } from './styles';
+import { Container, OptionsContainer, Option } from './styles';
 import logo from '../../assets/images/logo.png';
 
 export default function Header() {
@@ -12,13 +12,22 @@ export default function Header() {
         <img src={logo} alt="PizzaSoftware" />
       </Link>
 
-      <Cart to="/cart">
-        <div>
-          <strong>Meu carrinho</strong>
-          <span>3 pizza(s)</span>
-        </div>
-        <MdShoppingCart size={36} color="#cc0000" />
-      </Cart>
+      <OptionsContainer>
+        <Option to="/menu">
+          <div>
+            <strong>Cardápio</strong>
+            <span>Opções deliciosas</span>
+          </div>
+          <MdLocalPizza size={36} color="#000" />
+        </Option>
+        <Option to="/cart">
+          <div>
+            <strong>Meu carrinho</strong>
+            <span>3 pizza(s)</span>
+          </div>
+          <MdShoppingCart size={36} color="#000" />
+        </Option>
+      </OptionsContainer>
     </Container>
   );
 }
