@@ -17,209 +17,250 @@
     {
       "id": 1,
       "type": "Broto",
-      "description": "Pizza com 4 pedaços"
+      "description": "Pizza com 4 pedaços",
+      "price": 0
     },
     {
       "id": 2,
       "type": "Média",
-      "description": "Pizza com 6 pedaços"
+      "description": "Pizza com 6 pedaços",
+      "price": 5
     },
     {
       "id": 3,
       "type": "Grande",
-      "description": "Pizza com 8 pedaços"
+      "description": "Pizza com 8 pedaços",
+      "price": 10
     },
     {
       "id": 4,
       "type": "Família",
-      "description": "Pizza com 12 pedaços"
+      "description": "Pizza com 12 pedaços",
+      "price": 15
     }
   ],
   "flavor": [
     {
       "id": 1,
       "type": "A Moda da Casa",
-      "description": "Mussarela, lombo, champignon, catupiry, bacon e azeitonas"
+      "description": "Mussarela, lombo, champignon, catupiry, bacon e azeitonas",
+      "price": 32
     },
     {
       "id": 2,
       "type": "A Moda da Geca",
-      "description": "Mussarela, frango, presunto, lombo, cebola, catupiry e azeitonas"
+      "description": "Mussarela, frango, presunto, lombo, cebola, catupiry e azeitonas",
+      "price": 31.5
     },
     {
       "id": 3,
       "type": "Abobrinha",
-      "description": "Mussarela, abobrinha em rodelas, alho frito e azeitonas"
+      "description": "Mussarela, abobrinha em rodelas, alho frito e azeitonas",
+      "price": 28
     },
     {
       "id": 4,
       "type": "Alho e Óleo",
-      "description": "Mussarela, alho, parmesão e azeitonas"
+      "description": "Mussarela, alho, parmesão e azeitonas",
+      "price": 27.5
     },
     {
       "id": 5,
       "type": "Aliche",
-      "description": "Mussarela, filé de aliche, parmesão, tomate e azeitonas"
+      "description": "Mussarela, filé de aliche, parmesão, tomate e azeitonas",
+      "price": 29
     },
     {
       "id": 6,
       "type": "Americana",
-      "description": "Mussarela, frango, champignon, bacon, cheddar e azeitonas"
+      "description": "Mussarela, frango, champignon, bacon, cheddar e azeitonas",
+      "price": 29.5
     },
     {
       "id": 7,
       "type": "Atum",
-      "description": "Mussarela, atum, cebolas e azeitonas"
+      "description": "Mussarela, atum, cebolas e azeitonas",
+      "price": 29
     },
     {
       "id": 8,
       "type": "Baiana",
-      "description": "Mussarela, calabresa, pimenta, cebolas e azeitonas"
+      "description": "Mussarela, calabresa, pimenta, cebolas e azeitonas",
+      "price": 29.8
     },
     {
       "id": 9,
       "type": "Brócolis",
-      "description": "Mussarela, brócolis, bacon, alho frito, cebolas e azeitonas"
+      "description": "Mussarela, brócolis, bacon, alho frito, cebolas e azeitonas",
+      "price": 28.9
     },
     {
       "id": 10,
       "type": "Calabresa",
-      "description": "Mussarela, calabresa, cebolas e azeitonas"
+      "description": "Mussarela, calabresa, cebolas e azeitonas",
+      "price": 27
     },
     {
       "id": 11,
       "type": "Camarão",
-      "description": "Mussarela, camarão, catupiry e azeitonas"
+      "description": "Mussarela, camarão, catupiry e azeitonas",
+      "price": 32
     },
     {
       "id": 12,
       "type": "Carioca",
-      "description": "Mussarela, presunto, rodelas de tomate e azeitonas"
+      "description": "Mussarela, presunto, rodelas de tomate e azeitonas",
+      "price": 28.2
     },
     {
       "id": 13,
       "type": "Catuperu",
-      "description": "Mussarela, peito de peru, milho, catupiry e azeitonas"
+      "description": "Mussarela, peito de peru, milho, catupiry e azeitonas",
+      "price": 27.8
     },
     {
       "id": 14,
       "type": "Catupiry",
-      "description": "Mussarela, catupiry e azeitonas"
+      "description": "Mussarela, catupiry e azeitonas",
+      "price": 26
     },
     {
       "id": 15,
       "type": "Champignon",
-      "description": "Mussarela, champignon, bacon e azeitonas"
+      "description": "Mussarela, champignon, bacon e azeitonas",
+      "price": 28.4
     },
     {
       "id": 16,
       "type": "Creme de Milho",
-      "description": "Mussarela, creme de milho, batata palha e azeitonas"
+      "description": "Mussarela, creme de milho, batata palha e azeitonas",
+      "price": 26.8
     },
     {
       "id": 17,
       "type": "Frango Caipira",
-      "description": "Mussarela, frango, ervilhas, palmito, bacon, cebolas e azeitonas"
+      "description": "Mussarela, frango, ervilhas, palmito, bacon, cebolas e azeitonas",
+      "price": 28.6
     },
     {
       "id": 18,
       "type": "Frango Catupiry",
-      "description": "Mussarela, frango, catupiry e azeitonas"
+      "description": "Mussarela, frango, catupiry e azeitonas",
+      "price": 27.5
     },
     {
       "id": 19,
       "type": "Frango da Casa",
-      "description": "Mussarela, frango, bacon, catupiry, milho e azeitonas"
+      "description": "Mussarela, frango, bacon, catupiry, milho e azeitonas",
+      "price": 28
     },
     {
       "id": 20,
       "type": "Italiana",
-      "description": "Mussarela, calabresa, palmito, catupiry, cebolas e azeitonas"
+      "description": "Mussarela, calabresa, palmito, catupiry, cebolas e azeitonas",
+      "price": 30
     },
     {
       "id": 21,
       "type": "Lombinho",
-      "description": "Mussarela, lombo, cebolas e azeitonas"
+      "description": "Mussarela, lombo, cebolas e azeitonas",
+      "price": 29
     },
     {
       "id": 22,
       "type": "Lombo com Catupiry",
-      "description": "Mussarela, lombo, catupiry e azeitonas"
+      "description": "Mussarela, lombo, catupiry e azeitonas",
+      "price": 29.5
     },
     {
       "id": 23,
       "type": "Marguerita",
-      "description": "Mussarela, tomate, manjericão, parmesão e azeitonas"
+      "description": "Mussarela, tomate, manjericão, parmesão e azeitonas",
+      "price": 27.9
     },
     {
       "id": 24,
       "type": "Milho Verde",
-      "description": "Mussarela, milho, catupiry e azeitonas"
+      "description": "Mussarela, milho, catupiry e azeitonas",
+      "price": 27
     },
     {
       "id": 25,
       "type": "Mussarela",
-      "description": "Mussarela, rodelas de tomate e azeitonas"
+      "description": "Mussarela, rodelas de tomate e azeitonas",
+      "price": 25.9
     },
     {
       "id": 26,
       "type": "Napolitana",
-      "description": "Mussarela, manjericão, tomate, alho frito, parmesão e azeitonas"
+      "description": "Mussarela, manjericão, tomate, alho frito, parmesão e azeitonas",
+      "price": 27.1
     },
     {
       "id": 27,
       "type": "Paulista",
-      "description": "Mussarela, presunto, provolone, catupiry e azeitonas"
+      "description": "Mussarela, presunto, provolone, catupiry e azeitonas",
+      "price": 29.5
     },
     {
       "id": 28,
       "type": "Pepperoni",
-      "description": "Mussarela, pepperoni fatiado, cebolas e azeitonas"
+      "description": "Mussarela, pepperoni fatiado, cebolas e azeitonas",
+      "price": 30
     },
     {
       "id": 29,
       "type": "Portuguesa",
-      "description": "Mussarela, presunto, ervilhas, ovo, palmito, cebolas e azeitonas"
+      "description": "Mussarela, presunto, ervilhas, ovo, palmito, cebolas e azeitonas",
+      "price": 29.5
     },
     {
       "id": 30,
       "type": "Princesinha",
-      "description": "Mussarela, lombo, palmito, milho, tomate, catupiry e azeitonas"
+      "description": "Mussarela, lombo, palmito, milho, tomate, catupiry e azeitonas",
+      "price": 31.2
     },
     {
       "id": 31,
       "type": "Quatro Queijos",
-      "description": "Mussarela, provolone, catupiry, gorgonzola e azeitonas"
+      "description": "Mussarela, provolone, catupiry, gorgonzola e azeitonas",
+      "price": 31.6
     },
     {
       "id": 32,
       "type": "Rúcula",
-      "description": "Mussarela, tomate seco, rúculas e azeitonas"
+      "description": "Mussarela, tomate seco, rúculas e azeitonas",
+      "price": 30.1
     },
     {
       "id": 33,
       "type": "Siciliana",
-      "description": "Mussarela, presunto, bacon, champignon, tomate e azeitonas"
+      "description": "Mussarela, presunto, bacon, champignon, tomate e azeitonas",
+      "price": 29.9
     },
     {
       "id": 34,
       "type": "Strogonoff de Frango",
-      "description": "Mussarela, frango ao molho rose, champignon e azeitonas"
+      "description": "Mussarela, frango ao molho rose, champignon e azeitonas",
+      "price": 30.2
     },
     {
       "id": 35,
       "type": "Tonelada",
-      "description": "Mussarela, presunto, frango, calabresa, ovos, bacon, catupiry e azeitonas"
+      "description": "Mussarela, presunto, frango, calabresa, ovos, bacon, catupiry e azeitonas",
+      "price": 31.7
     },
     {
       "id": 36,
       "type": "Três Queijos",
-      "description": "Mussarela, provolone, catupiry e azeitonas"
+      "description": "Mussarela, provolone, catupiry e azeitonas",
+      "price": 29
     },
     {
       "id": 37,
       "type": "Vegetariana",
-      "description": "Mussarela, brócolis, escarola, champignon, tomate, palmito, parmesão e azeitonas"
+      "description": "Mussarela, brócolis, escarola, champignon, tomate, palmito, parmesão e azeitonas",
+      "price": 30
     }
   ]
 }

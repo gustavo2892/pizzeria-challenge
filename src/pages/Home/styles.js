@@ -18,15 +18,15 @@ export const Container = styled.section`
     height: 40px;
     margin-top: 40px;
     border-radius: 5px;
-    color: #8b0000;
+    color: #e61919;
     font-weight: 700;
-    border: 1px solid #8b0000;
+    border: 1px solid #e61919;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: background-color 0.2s;
     &:hover {
-      background: ${shade(0.2, '#8b0000')};
+      background: ${shade(0.2, '#e61919')};
       color: #fff;
     }
   }
