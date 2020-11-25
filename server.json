@@ -21,13 +21,13 @@
       "price": 0
     },
     {
-      "id": 3,
+      "id": 2,
       "type": "Tradicional",
       "description": "Pizza com 8 pedaços",
       "price": 5
     },
     {
-      "id": 4,
+      "id": 3,
       "type": "Família",
       "description": "Pizza com 12 pedaços",
       "price": 12

@@ -42,7 +42,7 @@ export default function DoughList({
           <li key={dough.id}>
             <img
               src={
-                require(`../../../assets/pizzas/${dough.id}.jpg`) ||
+                require(`../../../assets/doughs/${dough.id}.jpg`) ||
                 PizzaBackground
               }
               alt={dough.type}

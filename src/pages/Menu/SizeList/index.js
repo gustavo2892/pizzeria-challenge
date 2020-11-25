@@ -42,7 +42,7 @@ export default function SizeList({
           <li key={size.id}>
             <img
               src={
-                require(`../../../assets/pizzas/${size.id}.jpg`) ||
+                require(`../../../assets/sizes/${size.id}.png`) ||
                 PizzaBackground
               }
               alt={size.type}
