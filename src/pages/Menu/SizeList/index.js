@@ -1,53 +1,65 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
-import { formatPrice } from '../../util/format';
+import { formatPrice } from '../../../util/format';
 
-import api from '../../services/api';
+import api from '../../../services/api';
 import { ProductList } from './styles';
-import PizzaBackground from '../../assets/images/pizza-background.jpg';
-import Header from '../../components/Header';
-import Card from '../../components/Card';
+import PizzaBackground from '../../../assets/images/pizza-background.jpg';
+import Card from '../../../components/Card';
 
-export default function Menu() {
-  const [flavors, setFlavors] = useState([]);
+export default function SizeList({
+  currentOption,
+  handleSumOption,
+  handleSubtractOption,
+}) {
+  const [sizes, setSizes] = useState([]);
 
   useEffect(() => {
-    async function loadFlavors() {
-      const response = await api.get('flavors');
+    async function loadSizes() {
+      const response = await api.get('sizes');
 
-      const data = response.data.map(flavor => ({
-        ...flavor,
-        priceFormatted: formatPrice(flavor.price),
+      const data = response.data.map(size => ({
+        ...size,
+        priceFormatted: formatPrice(size.price),
       }));
 
-      setFlavors(data);
+      setSizes(data);
     }
 
-    loadFlavors();
+    loadSizes();
   }, []);
 
   return (
     <>
-      <Header />
       <Card
-        title="Escolha um sabor"
-        description="Selecione um dos sabores a seguir"
+        title="Escolha o tamanho"
+        handleSubtractOption={handleSubtractOption}
+        currentOption={currentOption}
       />
       <ProductList>
-        {flavors.map(flavor => (
-          <li key={flavor.id}>
+        {sizes.map(size => (
+          <li key={size.id}>
             <img
               src={
-                require(`../../assets/pizzas/${flavor.id}.jpg`) ||
+                require(`../../../assets/pizzas/${size.id}.jpg`) ||
                 PizzaBackground
               }
-              alt={flavor.type}
+              alt={size.type}
             />
-            <strong>{flavor.type}</strong>
-            <p>{flavor.description}</p>
-            <span>{flavor.priceFormatted}</span>
+            <strong>{size.type}</strong>
+            <p>{size.description}</p>
+            <span>+ {size.priceFormatted}</span>
 
-            <button type="button">
+            <button
+              type="button"
+              onClick={() =>
+                handleSumOption({
+                  option: size.type,
+                  price: size.price,
+                })
+              }
+            >
               <span>SELECIONAR</span>
             </button>
           </li>
@@ -56,3 +68,9 @@ export default function Menu() {
     </>
   );
 }
+
+SizeList.propTypes = {
+  currentOption: PropTypes.number,
+  handleSumOption: PropTypes.func,
+  handleSubtractOption: PropTypes.func,
+};

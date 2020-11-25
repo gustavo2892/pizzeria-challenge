@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 import { formatPrice } from '../../../util/format';
 
 import api from '../../../services/api';
 import { ProductList } from './styles';
 import PizzaBackground from '../../../assets/images/pizza-background.jpg';
-import Header from '../../../components/Header';
 import Card from '../../../components/Card';
 
-export default function DoughList() {
+export default function DoughList({
+  currentOption,
+  handleSumOption,
+  handleSubtractOption,
+}) {
   const [doughs, setDoughs] = useState([]);
 
   useEffect(() => {
@@ -28,10 +32,10 @@ export default function DoughList() {
 
   return (
     <>
-      <Header />
       <Card
         title="Escolha a massa"
-        description="Selecione um dos tipos de massa"
+        handleSubtractOption={handleSubtractOption}
+        currentOption={currentOption}
       />
       <ProductList>
         {doughs.map(dough => (
@@ -45,7 +49,10 @@ export default function DoughList() {
             />
             <strong>{dough.type}</strong>
 
-            <button type="button">
+            <button
+              type="button"
+              onClick={() => handleSumOption({ option: dough.type, price: 0 })}
+            >
               <span>SELECIONAR</span>
             </button>
           </li>
@@ -54,3 +61,9 @@ export default function DoughList() {
     </>
   );
 }
+
+DoughList.propTypes = {
+  currentOption: PropTypes.number,
+  handleSumOption: PropTypes.func,
+  handleSubtractOption: PropTypes.func,
+};

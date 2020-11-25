@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 import { formatPrice } from '../../../util/format';
 
 import api from '../../../services/api';
 import { ProductList } from './styles';
 import PizzaBackground from '../../../assets/images/pizza-background.jpg';
-import Header from '../../../components/Header';
 import Card from '../../../components/Card';
 
-export default function FlavorList() {
+export default function FlavorList({
+  currentOption,
+  handleSumOption,
+  handleSubtractOption,
+}) {
   const [flavors, setFlavors] = useState([]);
 
   useEffect(() => {
@@ -28,10 +32,10 @@ export default function FlavorList() {
 
   return (
     <>
-      <Header />
       <Card
         title="Escolha um sabor"
-        description="Selecione um dos sabores a seguir"
+        handleSubtractOption={handleSubtractOption}
+        currentOption={currentOption}
       />
       <ProductList>
         {flavors.map(flavor => (
@@ -47,7 +51,15 @@ export default function FlavorList() {
             <p>{flavor.description}</p>
             <span>{flavor.priceFormatted}</span>
 
-            <button type="button">
+            <button
+              type="button"
+              onClick={() =>
+                handleSumOption({
+                  option: flavor.type,
+                  price: flavor.price,
+                })
+              }
+            >
               <span>SELECIONAR</span>
             </button>
           </li>
@@ -56,3 +68,9 @@ export default function FlavorList() {
     </>
   );
 }
+
+FlavorList.propTypes = {
+  currentOption: PropTypes.number,
+  handleSumOption: PropTypes.func,
+  handleSubtractOption: PropTypes.func,
+};
