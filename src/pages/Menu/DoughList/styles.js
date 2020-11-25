@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { shade } from 'polished';
 
 export const ProductList = styled.ul`
-  position: relative;
   margin: 30px 30px 0 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -14,6 +13,7 @@ export const ProductList = styled.ul`
     background: #fff;
     border-radius: 4px;
     padding: 20px;
+    text-align: center;
     img {
       align-self: center;
       width: 250px;
@@ -26,11 +26,7 @@ export const ProductList = styled.ul`
       line-height: 20px;
       color: #333;
       margin-top: 5px;
-    }
-    > span {
-      font-size: 21px;
-      font-weight: bold;
-      margin: 5px 0 20px;
+      margin-bottom: 10px;
     }
     button {
       background: #228b22;

@@ -1,5 +1,5 @@
 {
-  "dough": [
+  "doughs": [
     {
       "id": 1,
       "type": "Tradicional"
@@ -13,33 +13,27 @@
       "type": "Tapioca"
     }
   ],
-  "size": [
+  "sizes": [
     {
       "id": 1,
       "type": "Broto",
-      "description": "Pizza com 4 pedaços",
+      "description": "Pizza com 6 pedaços",
       "price": 0
     },
     {
-      "id": 2,
-      "type": "Média",
-      "description": "Pizza com 6 pedaços",
-      "price": 5
-    },
-    {
       "id": 3,
-      "type": "Grande",
+      "type": "Tradicional",
       "description": "Pizza com 8 pedaços",
-      "price": 10
+      "price": 5
     },
     {
       "id": 4,
       "type": "Família",
       "description": "Pizza com 12 pedaços",
-      "price": 15
+      "price": 12
     }
   ],
-  "flavor": [
+  "flavors": [
     {
       "id": 1,
       "type": "A Moda da Casa",
@@ -49,13 +43,13 @@
     {
       "id": 2,
       "type": "A Moda da Geca",
-      "description": "Mussarela, frango, presunto, lombo, cebola e catupiry",
+      "description": "Mussarela, frango, presunto, lombo e cebola",
       "price": 31.5
     },
     {
       "id": 3,
       "type": "Abobrinha",
-      "description": "Mussarela, abobrinha em rodelas, alho frito e azeitonas",
+      "description": "Mussarela, abobrinha, alho frito e azeitonas",
       "price": 28
     },
     {
@@ -67,7 +61,7 @@
     {
       "id": 5,
       "type": "Aliche",
-      "description": "Mussarela, filé de aliche, parmesão, tomate e azeitonas",
+      "description": "Mussarela, filé de aliche, parmesão e azeitonas",
       "price": 29
     },
     {
@@ -91,7 +85,7 @@
     {
       "id": 9,
       "type": "Brócolis",
-      "description": "Mussarela, brócolis, bacon, alho frito, cebolas e azeitonas",
+      "description": "Mussarela, brócolis, bacon, alho frito e cebolas",
       "price": 28.9
     },
     {
@@ -139,7 +133,7 @@
     {
       "id": 17,
       "type": "Frango Caipira",
-      "description": "Mussarela, frango, ervilhas, palmito, bacon e cebolas",
+      "description": "Mussarela, frango, ervilhas, palmito e cebolas",
       "price": 28.6
     },
     {
@@ -151,7 +145,7 @@
     {
       "id": 19,
       "type": "Frango da Casa",
-      "description": "Mussarela, frango, bacon, catupiry, milho e azeitonas",
+      "description": "Mussarela, frango, bacon, catupiry, e milho",
       "price": 28
     },
     {
@@ -175,7 +169,7 @@
     {
       "id": 23,
       "type": "Marguerita",
-      "description": "Mussarela, tomate, manjericão, parmesão e azeitonas",
+      "description": "Mussarela, tomate, manjericão e parmesão",
       "price": 27.9
     },
     {
@@ -193,7 +187,7 @@
     {
       "id": 26,
       "type": "Napolitana",
-      "description": "Mussarela, manjericão, tomate, alho frito e parmesão",
+      "description": "Mussarela, manjericão, tomate, e alho frito",
       "price": 27.1
     },
     {
@@ -211,7 +205,7 @@
     {
       "id": 29,
       "type": "Portuguesa",
-      "description": "Mussarela, presunto, ervilhas, ovo, palmito e cebolas",
+      "description": "Mussarela, presunto, ervilhas, ovo e cebolas",
       "price": 29.5
     },
     {
@@ -223,7 +217,7 @@
     {
       "id": 31,
       "type": "Quatro Queijos",
-      "description": "Mussarela, provolone, catupiry, gorgonzola e azeitonas",
+      "description": "Mussarela, provolone, catupiry e gorgonzola",
       "price": 31.6
     },
     {
@@ -241,13 +235,13 @@
     {
       "id": 34,
       "type": "Strogonoff de Frango",
-      "description": "Mussarela, frango ao molho rose, champignon e azeitonas",
+      "description": "Mussarela, frango ao molho rose e champignon",
       "price": 30.2
     },
     {
       "id": 35,
       "type": "Tonelada",
-      "description": "Mussarela, presunto, frango, calabresa, ovos e bacon",
+      "description": "Mussarela, presunto, frango, calabresa e bacon",
       "price": 31.7
     },
     {

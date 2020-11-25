@@ -15,7 +15,8 @@ export default createGlobalStyle`
     background: url(${BackgroundImage}) center;
     -webkit-font-smoothing: antialiased !important;
   }
-  a {
-    text-decoration: none;;
+  body, input, a {
+    text-decoration: none;
+    font-family: sans-serif;
   }
 `;
