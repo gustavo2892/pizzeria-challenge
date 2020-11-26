@@ -11,7 +11,7 @@
 
 ## Descrição
 
-Aplicação desenvolvido como requisito de entrevista de emprego. Algumas da técnologias utilizadas:
+Aplicação desenvolvida como requisito de entrevista de emprego. Algumas da técnologias utilizadas:
 
 - :globe_with_meridians: **React** — Biblioteca para criar interfaces de usuário
 - :recycle: **Redux & Redux Saga** — Gerenciamento de estados dos componentes
