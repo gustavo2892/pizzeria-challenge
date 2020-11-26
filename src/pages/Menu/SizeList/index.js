@@ -36,6 +36,7 @@ export default function SizeList({
         title="Escolha o tamanho"
         handleSubtractOption={handleSubtractOption}
         currentOption={currentOption}
+        addToCartFinalized={false}
       />
       <ProductList>
         {sizes.map(size => (

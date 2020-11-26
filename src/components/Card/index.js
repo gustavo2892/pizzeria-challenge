@@ -4,11 +4,16 @@ import { MdChevronLeft } from 'react-icons/md';
 
 import { Container } from './styles';
 
-export default function Card({ title, currentOption, handleSubtractOption }) {
+export default function Card({
+  title,
+  currentOption,
+  handleSubtractOption,
+  addToCartFinalized,
+}) {
   return (
     <Container>
       <div>
-        {currentOption !== 0 && (
+        {currentOption !== 0 && !addToCartFinalized && (
           <button type="button" onClick={() => handleSubtractOption()}>
             <MdChevronLeft size={36} color="#000" />
           </button>
@@ -26,4 +31,5 @@ Card.propTypes = {
   title: PropTypes.string,
   currentOption: PropTypes.number,
   handleSubtractOption: PropTypes.func,
+  addToCartFinalized: PropTypes.bool,
 };

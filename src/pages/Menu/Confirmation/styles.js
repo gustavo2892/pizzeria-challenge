@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   margin: 50px 30px 0 30px;
@@ -51,5 +52,20 @@ export const ButtonsContainer = styled.div`
         background: ${shade(0.2, '#e61919')};
       }
     }
+  }
+`;
+
+export const ButtonGoToCart = styled(Link)`
+  background: #0000ff;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-weight: 250px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: background 0.2s;
+  &:hover {
+    background: ${shade(0.2, '#0000ff')};
   }
 `;

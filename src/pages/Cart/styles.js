@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { darken } from 'polished';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   border: solid 2px;
@@ -50,6 +51,10 @@ export const ProductTable = styled.table`
   strong {
     color: #333;
     display: block;
+
+    span {
+      font-size: 12px;
+    }
   }
   span {
     display: block;
@@ -85,5 +90,20 @@ export const Total = styled.div`
   strong {
     font-size: 28px;
     margin-left: 5px;
+  }
+`;
+
+export const ButtonNewPizza = styled(Link)`
+  background: #0000ff;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  padding: 11px 20px;
+  font-weight: 250px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: background 0.2s;
+  &:hover {
+    background: ${darken(0.03, '#0000ff')};
   }
 `;

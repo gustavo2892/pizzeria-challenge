@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { uuid } from 'uuidv4';
 
 import { Container } from './styles';
 import Header from '../../components/Header';
@@ -9,24 +10,32 @@ import Confirmation from './Confirmation';
 
 export default function Menu() {
   const [currentOption, setCurrentOption] = useState(0);
+  const [addToCartFinalized, setAddToCartFinalized] = useState(false);
   const [pizza, setPizza] = useState({
+    id: 0,
     flavor: '',
     size: '',
     dough: '',
     priceFlavor: 0,
     priceSize: 0,
+    total: 0,
   });
 
   function handleSumOption({ option, price }) {
     switch (currentOption) {
       case 0:
-        setPizza({ ...pizza, flavor: option, priceFlavor: price });
+        setPizza({ ...pizza, flavor: option, priceFlavor: price, id: uuid() });
         break;
       case 1:
         setPizza({ ...pizza, dough: option });
         break;
       case 2:
-        setPizza({ ...pizza, size: option, priceSize: price });
+        setPizza({
+          ...pizza,
+          size: option,
+          priceSize: price,
+          total: pizza.priceFlavor + price,
+        });
         break;
       default:
         break;
@@ -38,13 +47,13 @@ export default function Menu() {
   function handleSubtractOption() {
     switch (currentOption) {
       case 1:
-        setPizza({ ...pizza, flavor: '', priceFlavor: 0 });
+        setPizza({ ...pizza, flavor: '', priceFlavor: 0, id: 0 });
         break;
       case 2:
         setPizza({ ...pizza, dough: '' });
         break;
       case 3:
-        setPizza({ ...pizza, size: '', priceSize: 0 });
+        setPizza({ ...pizza, size: '', priceSize: 0, total: 0 });
         break;
       default:
         break;
@@ -55,6 +64,7 @@ export default function Menu() {
 
   function handleResetPizza() {
     setPizza({
+      id: 0,
       flavor: '',
       size: '',
       dough: '',
@@ -62,6 +72,7 @@ export default function Menu() {
       priceSize: 0,
     });
     setCurrentOption(0);
+    setAddToCartFinalized(false);
   }
 
   return (
@@ -95,6 +106,8 @@ export default function Menu() {
             handleSubtractOption={handleSubtractOption}
             currentOption={currentOption}
             handleResetPizza={handleResetPizza}
+            addToCartFinalized={addToCartFinalized}
+            setAddToCartFinalized={setAddToCartFinalized}
           />
         )}
       </Container>

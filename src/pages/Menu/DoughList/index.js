@@ -36,6 +36,7 @@ export default function DoughList({
         title="Escolha a massa"
         handleSubtractOption={handleSubtractOption}
         currentOption={currentOption}
+        addToCartFinalized={false}
       />
       <ProductList>
         {doughs.map(dough => (

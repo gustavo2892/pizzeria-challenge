@@ -1,11 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MdShoppingCart, MdLocalPizza } from 'react-icons/md';
+import { useSelector } from 'react-redux';
 
 import { Container, OptionsContainer, Option } from './styles';
 import logo from '../../assets/images/logo.png';
 
 export default function Header() {
+  const cartSize = useSelector(state => state.cart.length);
+  const pizzaAmount = useSelector(state => {
+    let amount = 0;
+    state.cart.map(pizza => {
+      amount += pizza.amount;
+    });
+    return amount;
+  });
+
   return (
     <Container>
       <Link to="/">
@@ -23,7 +33,7 @@ export default function Header() {
         <Option to="/cart">
           <div>
             <strong>Meu carrinho</strong>
-            <span>3 pizza(s)</span>
+            <span>{cartSize === 0 ? 'Vazio' : `${pizzaAmount} pizza(s)`}</span>
           </div>
           <MdShoppingCart size={36} color="#000" />
         </Option>

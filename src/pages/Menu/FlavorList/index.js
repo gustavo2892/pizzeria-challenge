@@ -36,6 +36,7 @@ export default function FlavorList({
         title="Escolha um sabor"
         handleSubtractOption={handleSubtractOption}
         currentOption={currentOption}
+        addToCartFinalized={false}
       />
       <ProductList>
         {flavors.map(flavor => (
