@@ -25,6 +25,11 @@ export default function cart(state = [], action) {
         }
       });
     }
+    case '@cart/RESET': {
+      return produce(state, draft => {
+        draft.splice(0, action.cartLength);
+      });
+    }
     default:
       return state;
   }

@@ -23,6 +23,8 @@ function Confirmation({
     setAddToCartFinalized(true);
   }
 
+  console.log('Essa é a pizza = ', pizza);
+
   return (
     <>
       <Card
@@ -84,11 +86,14 @@ export default Confirmation;
 
 Confirmation.propTypes = {
   pizza: PropTypes.objectOf({
+    id: PropTypes.string,
     flavor: PropTypes.string,
+    mode: PropTypes.string,
     size: PropTypes.string,
     dough: PropTypes.string,
     priceFlavor: PropTypes.number,
     priceSize: PropTypes.number,
+    total: PropTypes.number,
   }),
   currentOption: PropTypes.number,
   handleSubtractOption: PropTypes.func,

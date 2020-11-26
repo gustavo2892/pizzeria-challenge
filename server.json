@@ -256,5 +256,85 @@
       "description": "Mussarela, brócolis, champignon, tomate e palmito",
       "price": 30
     }
+  ],
+  "promotions": [
+    {
+      "id": 1,
+      "day": 0,
+      "flavor": "Frango Catupiry",
+      "size": "Família",
+      "dough": "Tradicional",
+      "priceFlavor": 25.5,
+      "priceSize": 10,
+      "total": 35.5,
+      "points": 12
+    },
+    {
+      "id": 2,
+      "day": 1,
+      "flavor": "Três Queijos",
+      "size": "Família",
+      "dough": "Tradicional",
+      "priceFlavor": 26.5,
+      "priceSize": 10,
+      "total": 36.5,
+      "points": 10
+    },
+    {
+      "id": 3,
+      "day": 2,
+      "flavor": "Portuguesa",
+      "size": "Família",
+      "dough": "Tradicional",
+      "priceFlavor": 26.5,
+      "priceSize": 10,
+      "total": 36.5,
+      "points": 15
+    },
+    {
+      "id": 4,
+      "day": 3,
+      "flavor": "A Moda da Casa",
+      "size": "Família",
+      "dough": "Tradicional",
+      "priceFlavor": 28.5,
+      "priceSize": 10,
+      "total": 38.5,
+      "points": 14
+    },
+    {
+      "id": 5,
+      "mode": "promotion",
+      "day": 4,
+      "flavor": "Milho Verde",
+      "size": "Família",
+      "dough": "Tradicional",
+      "priceFlavor": 22.5,
+      "priceSize": 10,
+      "total": 32.5,
+      "points": 12
+    },
+    {
+      "id": 6,
+      "day": 5,
+      "flavor": "Calabresa",
+      "size": "Família",
+      "dough": "Tradicional",
+      "priceFlavor": 24,
+      "priceSize": 10,
+      "total": 34,
+      "points": 15
+    },
+    {
+      "id": 7,
+      "day": 6,
+      "flavor": "Mussarela",
+      "size": "Família",
+      "dough": "Tradicional",
+      "priceFlavor": 21.5,
+      "priceSize": 10,
+      "total": 31.5,
+      "points": 12
+    }
   ]
 }

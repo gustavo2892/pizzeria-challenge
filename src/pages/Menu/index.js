@@ -7,12 +7,14 @@ import DoughList from './DoughList';
 import FlavorList from './FlavorList';
 import SizeList from './SizeList';
 import Confirmation from './Confirmation';
+import OverlayPromotion from './OverlayPromotion';
 
 export default function Menu() {
   const [currentOption, setCurrentOption] = useState(0);
   const [addToCartFinalized, setAddToCartFinalized] = useState(false);
   const [pizza, setPizza] = useState({
     id: 0,
+    mode: 'normal',
     flavor: '',
     size: '',
     dough: '',
@@ -65,6 +67,7 @@ export default function Menu() {
   function handleResetPizza() {
     setPizza({
       id: 0,
+      mode: 'normal',
       flavor: '',
       size: '',
       dough: '',
@@ -78,6 +81,7 @@ export default function Menu() {
   return (
     <>
       <Header />
+      <OverlayPromotion />
       <Container currentOption={currentOption}>
         {currentOption === 0 && (
           <FlavorList

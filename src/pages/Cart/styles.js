@@ -107,3 +107,30 @@ export const ButtonNewPizza = styled(Link)`
     background: ${darken(0.03, '#204ac8')};
   }
 `;
+
+export const ContainerFinalized = styled.div`
+  margin-top: 110px;
+  width: 100%;
+
+  div {
+    border: solid 1px #204ac8;
+    background: #fff;
+    padding: 30px;
+    border-radius: 4px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+
+  h3 {
+    margin-top: 20px;
+  }
+
+  p {
+    margin-top: 5px;
+  }
+`;

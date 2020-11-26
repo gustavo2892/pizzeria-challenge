@@ -25,12 +25,13 @@ export const Container = styled.div`
 
   p {
     & + p {
-      margin-top: 20px;
+      margin-top: 10px;
     }
   }
 
   span {
     margin-top: 30px;
+    margin-bottom: 20px;
   }
 `;
 
