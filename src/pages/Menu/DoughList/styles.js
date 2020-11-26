@@ -10,6 +10,7 @@ export const ProductList = styled.ul`
   li {
     display: flex;
     flex-direction: column;
+    border: solid 1px #204ac8;
     background: #fff;
     border-radius: 4px;
     padding: 20px;
@@ -20,9 +21,10 @@ export const ProductList = styled.ul`
       height: 150px;
       border-radius: 4px;
       margin-bottom: 12px;
+      border: solid 1px #e61919;
     }
     > strong {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 20px;
       color: #333;
       margin-top: 5px;

@@ -14,7 +14,7 @@ export const Container = styled.header`
   top: 0;
   z-index: 10;
   img {
-    width: 50px;
+    width: 80px;
     margin: 15px 0px 15px 50px;
   }
 `;

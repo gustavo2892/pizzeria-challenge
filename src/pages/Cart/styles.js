@@ -94,7 +94,7 @@ export const Total = styled.div`
 `;
 
 export const ButtonNewPizza = styled(Link)`
-  background: #0000ff;
+  background: #204ac8;
   color: #fff;
   border: 0;
   border-radius: 4px;
@@ -104,6 +104,6 @@ export const ButtonNewPizza = styled(Link)`
   text-transform: uppercase;
   transition: background 0.2s;
   &:hover {
-    background: ${darken(0.03, '#0000ff')};
+    background: ${darken(0.03, '#204ac8')};
   }
 `;

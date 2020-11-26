@@ -12,11 +12,15 @@ export const Container = styled.section`
   align-items: center;
   z-index: 5;
 
+  img {
+    width: 370px;
+  }
+
   a {
     background: transparent;
     width: 200px;
     height: 40px;
-    margin-top: 40px;
+    margin-top: 20px;
     border-radius: 5px;
     color: #e61919;
     font-weight: 700;

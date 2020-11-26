@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 
+import { MdCheckCircle } from 'react-icons/md';
 import { formatPrice } from '../../../util/format';
 import * as CartActions from '../../../store/modules/cart/actions';
 import { Container, ButtonsContainer, ButtonGoToCart } from './styles';
@@ -31,22 +32,26 @@ function Confirmation({
         addToCartFinalized={addToCartFinalized}
       />
       {!addToCartFinalized && (
-        <Container>
+        <Container addToCartFinalized={addToCartFinalized}>
           <h3>Detalhes da Pizza</h3>
           <p>
-            <strong>SABOR: </strong>
+            <strong>SABOR </strong>
+            <br />
             {pizza.flavor}
           </p>
           <p>
-            <strong>TAMANHO: </strong>
+            <strong>TAMANHO </strong>
+            <br />
             {pizza.size}
           </p>
           <p>
-            <strong>MASSA: </strong>
+            <strong>MASSA </strong>
+            <br />
             {pizza.dough}
           </p>
           <span>
-            <strong>TOTAL: </strong>
+            <strong>TOTAL </strong>
+            <br />
             {formatPrice(pizza.total)}
           </span>
           <ButtonsContainer>
@@ -60,7 +65,8 @@ function Confirmation({
         </Container>
       )}
       {addToCartFinalized && (
-        <Container>
+        <Container addToCartFinalized={addToCartFinalized}>
+          <MdCheckCircle size={70} color="#228b22" />
           <h3>A pizza foi adicionada com sucesso no carrinho</h3>
           <ButtonsContainer>
             <button type="button" onClick={() => handleResetPizza()}>

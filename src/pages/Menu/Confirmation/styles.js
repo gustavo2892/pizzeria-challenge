@@ -1,22 +1,31 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { shade } from 'polished';
 import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
-  margin: 50px 30px 0 30px;
+  margin: 30px 30px 0 30px;
   background: #fff;
   padding: 30px;
   display: flex;
   border-radius: 4px;
   flex-direction: column;
+  border: solid 1px #204ac8;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 
   h3 {
+    ${props =>
+      props.addToCartFinalized &&
+      css`
+        margin-top: 30px;
+      `}
     margin-bottom: 30px;
   }
 
   p {
     & + p {
-      margin-top: 2px;
+      margin-top: 20px;
     }
   }
 
@@ -28,7 +37,9 @@ export const Container = styled.div`
 export const ButtonsContainer = styled.div`
   display: flex;
   flex-direction: row;
-  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
 
   button {
     background: #228b22;
@@ -41,6 +52,7 @@ export const ButtonsContainer = styled.div`
     margin-right: 8px;
     padding: 15px;
     transition: background 0.2s;
+    width: 220px;
 
     &:hover {
       background: ${shade(0.2, '#228b22')};
@@ -56,16 +68,17 @@ export const ButtonsContainer = styled.div`
 `;
 
 export const ButtonGoToCart = styled(Link)`
-  background: #0000ff;
+  background: #204ac8;
   color: #fff;
   border: 0;
   border-radius: 4px;
-  padding: 12px 20px;
+  padding: 15px 20px;
   font-weight: 250px;
   font-size: 14px;
   text-transform: uppercase;
   transition: background 0.2s;
+  width: 220px;
   &:hover {
-    background: ${shade(0.2, '#0000ff')};
+    background: ${shade(0.2, '#204ac8')};
   }
 `;
